@@ -1,3 +1,10 @@
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Person {
 
     String name;
@@ -8,41 +15,5 @@ public class Person {
         this.name = name;
         this.age = age;
         this.profession = profession;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Person setName(String name) {
-        this.name = name;
-        return this;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public Person setAge(Integer age) {
-        this.age = age;
-        return this;
-    }
-
-    public String getProfession() {
-        return profession;
-    }
-
-    public Person setProfession(String profession) {
-        this.profession = profession;
-        return this;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", profession='" + profession + '\'' +
-                '}';
     }
 }
