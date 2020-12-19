@@ -42,9 +42,15 @@ public class JSONUtil {
         person1.setName("Nick");
         person1.setAge(28);
         person1.setProfession("student");
+        Address address1 = new Address();
+        address1.number = 4;
+        address1.street = "Petru Vintila";
+        address1.city = "Iasi";
+
+        person1.setAddress(address1);
 
         String personAsJson = convertJavaToJson(person1);
-        System.out.println("Person Object as JSON: " + personAsJson);
+        System.out.println("Person Object as JSON: " + personAsJson + "\n");
 
         // JSON as Person Object
         Person person2 = convertJsonToJava(personAsJson, Person.class);

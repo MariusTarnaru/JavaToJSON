@@ -10,10 +10,8 @@ public class Person {
     String name;
     Integer age;
     String profession;
+    Address address;
 
     public Person() {
-        this.name = name;
-        this.age = age;
-        this.profession = profession;
     }
 }
